@@ -13,7 +13,7 @@ describe('index.js', function () {
 
   describe('returnLastTwoDrivers()', function () {
     it('should return an array of the last two drivers', function () {
-      expect(returnLastTwoDrivers(['Sally', 'Bob', 'Freddy', 'Claudia'])).to.eql(['Freddy', 'Claudia']);
+      expect(returnLastTwoDrivers([returnLastTwoDrivers])).to.eql(['Freddy', 'Claudia']);
     });
   });
 
